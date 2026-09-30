@@ -55,15 +55,6 @@ Sobre a autoria dos projetos:
 - **SecureTask:** feito por mim, com apoio de fóruns e documentações.
 - **ActionHub:** trabalho em grupo. Desenvolvi o back-end. O front-end foi feito por [Fernanda Feitosa](https://github.com/Fernandafss) e [Natam dos Santos](https://github.com/natamdossantos6-gif).
 
-## Evidências visuais
-
-> Insira aqui as capturas de tela do portfólio publicado, salvas na pasta `assets/`.
-
-- [INSERIR CAPTURA DA PÁGINA INICIAL (COMPUTADOR)]
-- [INSERIR CAPTURA DA SEÇÃO DE PROJETOS (COMPUTADOR)]
-- [INSERIR CAPTURA DO SITE NO CELULAR]
-- [INSERIR CAPTURA DO GITHUB PAGES ATIVADO (SETTINGS > PAGES)]
-
 ## Como acessar
 
 O portfólio está publicado no GitHub Pages:
