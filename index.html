@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de Douglas Santos, Desenvolvedor Full Stack.">
+  <title>Douglas Santos | Desenvolvedor Full Stack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Link para pular direto ao conteúdo (acessibilidade por teclado) -->
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- CABEÇALHO E MENU -->
+  <header class="cabecalho">
+    <div class="container cabecalho__interno">
+      <a class="logo" href="#inicio">Douglas Santos</a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#competencias-tecnicas">Técnicas</a></li>
+          <li><a href="#competencias-comportamentais">Comportamentais</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#curriculo">Currículo</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- APRESENTAÇÃO -->
+    <section id="inicio" class="apresentacao">
+      <div class="container apresentacao__interno">
+        <img class="apresentacao__foto" src="assets/foto-perfil.jpg" width="400" height="400"
+             alt="Foto de perfil de Douglas Santos">
+        <div class="apresentacao__texto">
+          <h1>Douglas Santos</h1>
+          <p class="apresentacao__titulo">Desenvolvedor Full Stack</p>
+          <p>Sou desenvolvedor full stack e atuo com desenvolvimento, manutenção e evolução de aplicações web, com React, Next.js, TypeScript e Node.js, incluindo arquiteturas serverless na AWS. No dia a dia, também presto suporte ao produto diretamente ao cliente quando necessário. Curso Análise e Desenvolvimento de Sistemas e busco aprender continuamente.</p>
+          <div class="botoes">
+            <a class="botao botao--principal" href="#projetos">Ver projetos</a>
+            <a class="botao botao--secundario" href="assets/curriculo.pdf" download>Baixar currículo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="secao">
+      <div class="container">
+        <h2>Sobre mim</h2>
+        <p>Curso Análise e Desenvolvimento de Sistemas e trabalho como desenvolvedor full stack, atuando em desenvolvimento, manutenção e suporte ao produto.</p>
+        <h3>Áreas de interesse</h3>
+        <p>Tenho interesse em engenharia de LLM e em aprender a orquestrar agentes de IA de forma autônoma.</p>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao" class="secao secao--alternada">
+      <div class="container">
+        <h2>Formação</h2>
+
+        <h3>Formação acadêmica</h3>
+        <article class="item">
+          <h4>Análise e Desenvolvimento de Sistemas</h4>
+          <p>Universidade Cruzeiro do Sul</p>
+          <p>Em andamento: março de 2026 a abril de 2028 (previsão de conclusão).</p>
+        </article>
+
+        <h3>Cursos com certificado (Rocketseat)</h3>
+        <ul class="lista-cartoes">
+          <li class="cartao-curso">
+            <h4>Fundamentos do Next.js</h4>
+            <p>15h · concluído em <time datetime="2025-09-18">18/09/2025</time></p>
+            <a class="botao botao--pequeno" href="https://app.rocketseat.com.br/certificates/feb660fb-930d-4028-beb1-c7baa9304a2d"
+               target="_blank" rel="noopener noreferrer">Ver certificado<span class="sr-only"> de Fundamentos do Next.js</span></a>
+          </li>
+          <li class="cartao-curso">
+            <h4>Criando SaaS com Next.js e RBAC</h4>
+            <p>14h · concluído em <time datetime="2026-03-11">11/03/2026</time></p>
+            <a class="botao botao--pequeno" href="https://app.rocketseat.com.br/certificates/f36e9732-5281-4803-9ae4-187e9f45af22"
+               target="_blank" rel="noopener noreferrer">Ver certificado<span class="sr-only"> de Criando SaaS com Next.js e RBAC</span></a>
+          </li>
+          <li class="cartao-curso">
+            <h4>Integração de APIs de IA na Prática</h4>
+            <p>6h · concluído em <time datetime="2026-04-23">23/04/2026</time></p>
+            <a class="botao botao--pequeno" href="https://app.rocketseat.com.br/certificates/4089fb44-8a85-44a5-9bf1-f21cb87b4bd5"
+               target="_blank" rel="noopener noreferrer">Ver certificado<span class="sr-only"> de Integração de APIs de IA na Prática</span></a>
+          </li>
+        </ul>
+
+        <h3>Cursos livres</h3>
+        <ul class="lista-simples">
+          <li>React, Alura, 99h (oferecido pela empresa, sem certificado em meu nome)</li>
+          <li>Introdução ao JavaScript, YouTube, 11h</li>
+          <li>Introdução ao HTML, YouTube, 6h</li>
+          <li>Introdução ao CSS, YouTube, 4h</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- COMPETÊNCIAS TÉCNICAS -->
+    <section id="competencias-tecnicas" class="secao">
+      <div class="container">
+        <h2>Competências técnicas</h2>
+        <ul class="lista-cartoes">
+          <li class="cartao-competencia">
+            <h3>Front-end</h3>
+            <p class="nivel">Nível intermediário</p>
+            <p>React, Next.js, TypeScript</p>
+          </li>
+          <li class="cartao-competencia">
+            <h3>Back-end</h3>
+            <p class="nivel">Nível intermediário</p>
+            <p>Node.js, REST APIs, Serverless Framework</p>
+          </li>
+          <li class="cartao-competencia">
+            <h3>AWS</h3>
+            <p class="nivel">Nível intermediário</p>
+            <p>Lambda, Cognito, DynamoDB, Amplify, CloudWatch, IAM</p>
+          </li>
+          <li class="cartao-competencia">
+            <h3>Bancos de dados</h3>
+            <p class="nivel">Nível intermediário</p>
+            <p>PostgreSQL, MySQL</p>
+          </li>
+          <li class="cartao-competencia">
+            <h3>Práticas</h3>
+            <p class="nivel">Nível intermediário</p>
+            <p>CI/CD, GitHub, Scrum, Kanban</p>
+          </li>
+          <li class="cartao-competencia">
+            <h3>Python</h3>
+            <p class="nivel">Nível inicial</p>
+            <p>Flask, SQLAlchemy</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- COMPETÊNCIAS COMPORTAMENTAIS -->
+    <section id="competencias-comportamentais" class="secao secao--alternada">
+      <div class="container">
+        <h2>Competências comportamentais</h2>
+        <ul class="lista-cartoes lista-cartoes--duas">
+          <li class="cartao-competencia">
+            <h3>Resolução de problemas</h3>
+            <p>Atuo como suporte N2 do produto, analisando e resolvendo incidentes que chegam à sustentação.</p>
+          </li>
+          <li class="cartao-competencia">
+            <h3>Aprendizado contínuo</h3>
+            <p>Curso Análise e Desenvolvimento de Sistemas e complemento a formação com cursos como Fundamentos do Next.js e Integração de APIs de IA na Prática.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="secao">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="grade-projetos">
+
+          <!-- Projeto 1: GesTeam -->
+          <article class="cartao-projeto">
+            <img src="assets/projeto-01.png" width="1093" height="415" loading="lazy"
+                 alt="Tela do dashboard do GesTeam com indicadores de leads, tarefas e mensagens">
+            <div class="cartao-projeto__corpo">
+              <h3>GesTeam</h3>
+              <p class="etiqueta">Em desenvolvimento</p>
+              <p><strong>Objetivo:</strong> sistema de CRM para gerenciar meus estudos e cursos e acompanhar o processo de trabalho no ambiente de estudos, de forma organizada como em uma empresa.</p>
+              <p><strong>Funcionalidades:</strong> autenticação, dashboard com indicadores, leads (tabela e Kanban), tarefas, chat interno e gestão de usuários.</p>
+              <p><strong>Tecnologias:</strong> Next.js 14, TailwindCSS, shadcn/ui, Prisma, PostgreSQL, NextAuth, Docker.</p>
+              <p><strong>Minha participação:</strong> projeto iniciado a partir de um curso e finalizado com apoio de inteligência artificial, que gerou cerca de 80% do código. A arquitetura, a revisão e a escolha das tecnologias foram feitas por mim.</p>
+              <p><strong>Aprendizados:</strong> Next.js 14, TailwindCSS, shadcn/ui, Prisma, PostgreSQL, NextAuth e Docker.</p>
+              <a class="botao botao--pequeno" href="https://github.com/kuandry/crm"
+                 target="_blank" rel="noopener noreferrer">Ver repositório<span class="sr-only"> do GesTeam</span></a>
+            </div>
+          </article>
+
+          <!-- Projeto 2: SecureTask -->
+          <article class="cartao-projeto">
+            <img src="assets/projeto-02.png" width="900" height="220" loading="lazy"
+                 alt="Tela de boas-vindas do SecureTask com os botões Entrar e Criar Conta">
+            <div class="cartao-projeto__corpo">
+              <h3>SecureTask</h3>
+              <p class="etiqueta">Full stack</p>
+              <p><strong>Objetivo:</strong> aprender na prática a integração entre front-end e back-end, autenticação e banco de dados, usando uma lista de tarefas. Por ser um CRUD, o escopo simples facilita o aprendizado.</p>
+              <p><strong>Funcionalidades:</strong> cadastro e login com senha criptografada, criação, edição e exclusão de tarefas pessoais, rotas protegidas por JWT e isolamento de dados entre usuários.</p>
+              <p><strong>Tecnologias:</strong> Node.js, NestJS, Prisma, PostgreSQL, JWT, bcrypt, Helmet, Next.js, React, TypeScript, Tailwind CSS e Axios.</p>
+              <p><strong>Minha participação:</strong> projeto feito sozinho, com apoio de fóruns e documentações.</p>
+              <p><strong>Aprendizados:</strong> criptografia de senhas, DTOs e conceitos básicos de SQL.</p>
+              <a class="botao botao--pequeno" href="https://github.com/kuandry/SecureTask"
+                 target="_blank" rel="noopener noreferrer">Ver repositório<span class="sr-only"> do SecureTask</span></a>
+            </div>
+          </article>
+
+          <!-- Projeto 3: ActionHub -->
+          <article class="cartao-projeto">
+            <img src="assets/projeto-03.png" width="840" height="250" loading="lazy"
+                 alt="Tela Minhas Tarefas do ActionHub, com campo para nova tarefa, prioridade e uma tarefa cadastrada">
+            <div class="cartao-projeto__corpo">
+              <h3>ActionHub</h3>
+              <p class="etiqueta">Trabalho em grupo · disciplina de Python</p>
+              <p><strong>Objetivo:</strong> gerenciador de tarefas em que o usuário se registra, faz login e organiza tarefas pessoais por prioridade (baixa, normal, alta). Desenvolvido em grupo, para uma disciplina da faculdade, para aprender conceitos de Python.</p>
+              <p><strong>Tecnologias:</strong> Python, Flask, SQLAlchemy, Marshmallow, Flask-Login, SQLite, bcrypt, HTML com Jinja2 e CSS.</p>
+              <p><strong>Minha participação:</strong> desenvolvi o back-end. O front-end foi feito por
+                <a href="https://github.com/Fernandafss" target="_blank" rel="noopener noreferrer">Fernanda Feitosa</a> e
+                <a href="https://github.com/natamdossantos6-gif" target="_blank" rel="noopener noreferrer">Natam dos Santos</a>.</p>
+              <p><strong>Aprendizados:</strong> conhecimentos em Python.</p>
+              <a class="botao botao--pequeno" href="https://github.com/kuandry/actionhub"
+                 target="_blank" rel="noopener noreferrer">Ver repositório<span class="sr-only"> do ActionHub</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRÍCULO -->
+    <section id="curriculo" class="secao secao--alternada">
+      <div class="container">
+        <h2>Currículo</h2>
+        <p>Baixe meu currículo completo em PDF, com experiência profissional, formação e competências.</p>
+        <a class="botao botao--principal" href="assets/curriculo.pdf" download>Baixar currículo (PDF)</a>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="secao">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Fique à vontade para entrar em contato pelos canais abaixo.</p>
+        <div class="botoes">
+          <a class="botao botao--principal" href="mailto:cariocahdouglas@gmail.com">E-mail</a>
+          <a class="botao botao--secundario" href="https://github.com/kuandry"
+             target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="botao botao--secundario" href="https://www.linkedin.com/in/douglas-santos-aa14262a4/"
+             target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ COM AUTORIA -->
+  <footer class="rodape">
+    <div class="container">
+      <p>Desenvolvido por Douglas Santos · Atividade da disciplina Design Profissional · 2026</p>
+    </div>
+  </footer>
+
+</body>
+</html>

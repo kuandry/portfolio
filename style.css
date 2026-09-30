@@ -1,0 +1,513 @@
+/* ==========================================================
+   PORTFÓLIO PROFISSIONAL - Douglas Santos
+   Tema escuro, azul-marinho e branco
+   ========================================================== */
+
+/* ---------- 1. VARIÁVEIS (para trocar cores e medidas em um só lugar) ---------- */
+:root {
+  --cor-fundo: #0a1128;          /* azul-marinho escuro (fundo da página) */
+  --cor-fundo-alt: #0f1a3a;      /* azul-marinho um pouco mais claro (seções alternadas) */
+  --cor-cartao: #15234d;         /* fundo dos cartões */
+  --cor-borda: #2a3d78;          /* bordas dos cartões */
+  --cor-texto: #f5f7fb;          /* branco levemente suave */
+  --cor-texto-suave: #c3cce6;    /* texto secundário */
+  --cor-destaque: #7aa2ff;       /* azul claro para títulos e links */
+  --cor-botao: #2f5bd6;          /* azul dos botões principais */
+  --cor-botao-hover: #4a72e8;
+  --cor-foco: #ffd166;           /* amarelo do contorno de foco */
+
+  --fonte: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --largura-max: 1120px;
+  --raio: 12px;
+  --espaco: 1.5rem;
+}
+
+/* ---------- 2. RESET E BASE ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--cor-texto);
+  background: var(--cor-fundo);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+  color: var(--cor-texto);
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--cor-botao);
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: var(--cor-destaque);
+  margin-top: 2rem;
+}
+
+h4 {
+  font-size: 1.05rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--cor-destaque);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: 0 var(--espaco);
+}
+
+/* Texto visível só para leitores de tela */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- 3. FOCO VISÍVEL (navegação por teclado) ---------- */
+a:focus-visible {
+  outline: 3px solid var(--cor-foco);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.pular-conteudo {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 200;
+  background: var(--cor-foco);
+  color: #000;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pular-conteudo:focus {
+  top: 1rem;
+}
+
+/* ---------- 4. CABEÇALHO E MENU ---------- */
+.cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10, 17, 40, 0.96);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.cabecalho__interno {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.logo {
+  color: var(--cor-texto);
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.5rem;
+}
+
+.menu a {
+  display: block;
+  padding: 0.4rem 0.75rem;
+  color: var(--cor-texto-suave);
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-radius: 6px;
+}
+
+.menu a:hover {
+  color: var(--cor-texto);
+  background: var(--cor-cartao);
+}
+
+/* Compensa o menu fixo ao clicar nos links internos */
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+/* ---------- 5. APRESENTAÇÃO ---------- */
+.apresentacao {
+  padding: 4rem 0;
+  background: linear-gradient(160deg, #0f1f4d 0%, var(--cor-fundo) 65%);
+}
+
+.apresentacao__interno {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.apresentacao__foto {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--cor-botao);
+  flex-shrink: 0;
+}
+
+.apresentacao h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.apresentacao__titulo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--cor-destaque);
+  margin-bottom: 1rem;
+}
+
+/* ---------- 6. BOTÕES ---------- */
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.botao--principal {
+  background: var(--cor-botao);
+  color: #fff;
+}
+
+.botao--principal:hover {
+  background: var(--cor-botao-hover);
+}
+
+.botao--secundario {
+  border-color: var(--cor-texto);
+  color: var(--cor-texto);
+}
+
+.botao--secundario:hover {
+  background: var(--cor-texto);
+  color: var(--cor-fundo);
+}
+
+.botao--pequeno {
+  padding: 0.5rem 1.1rem;
+  font-size: 0.95rem;
+  background: var(--cor-botao);
+  color: #fff;
+}
+
+.botao--pequeno:hover {
+  background: var(--cor-botao-hover);
+}
+
+/* ---------- 7. SEÇÕES ---------- */
+.secao {
+  padding: 4rem 0;
+}
+
+.secao--alternada {
+  background: var(--cor-fundo-alt);
+}
+
+/* ---------- 8. FORMAÇÃO ---------- */
+.item {
+  background: var(--cor-cartao);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 1.25rem 1.5rem;
+}
+
+.item p {
+  margin-bottom: 0.25rem;
+  color: var(--cor-texto-suave);
+}
+
+.lista-simples li {
+  padding: 0.6rem 0 0.6rem 1.25rem;
+  border-left: 3px solid var(--cor-botao);
+  margin-bottom: 0.6rem;
+  background: var(--cor-cartao);
+  border-radius: 0 8px 8px 0;
+  padding-right: 1rem;
+}
+
+/* ---------- 9. LISTAS EM CARTÕES (cursos e competências) ---------- */
+.lista-cartoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.lista-cartoes--duas {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cartao-curso,
+.cartao-competencia {
+  background: var(--cor-cartao);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 1.25rem 1.5rem;
+}
+
+.cartao-curso {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cartao-curso p {
+  color: var(--cor-texto-suave);
+}
+
+.cartao-curso .botao {
+  margin-top: auto;
+}
+
+.cartao-competencia h3 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.cartao-competencia p:last-child {
+  margin-bottom: 0;
+}
+
+.nivel {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cor-texto);
+  background: var(--cor-botao);
+  padding: 0.15rem 0.7rem;
+  border-radius: 999px;
+}
+
+/* ---------- 10. PROJETOS (grade de 3 colunas) ---------- */
+.grade-projetos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.cartao-projeto {
+  display: flex;
+  flex-direction: column;
+  background: var(--cor-cartao);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.cartao-projeto:hover {
+  transform: translateY(-4px);
+  border-color: var(--cor-destaque);
+}
+
+.cartao-projeto img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain; /* mostra o print inteiro, sem cortar as laterais */
+  background: var(--cor-fundo);
+}
+
+.cartao-projeto__corpo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.25rem 1.5rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+.cartao-projeto__corpo h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1.35rem;
+}
+
+.cartao-projeto__corpo .botao {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.cartao-projeto__corpo p:nth-last-of-type(1) {
+  margin-bottom: 1.25rem;
+}
+
+.etiqueta {
+  align-self: flex-start;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-destaque);
+  padding: 0.1rem 0.7rem;
+  border-radius: 999px;
+  margin-bottom: 1rem !important;
+}
+
+/* ---------- 11. RODAPÉ ---------- */
+.rodape {
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--cor-borda);
+  background: #070d20;
+  text-align: center;
+  color: var(--cor-texto-suave);
+  font-size: 0.9rem;
+}
+
+.rodape p {
+  margin: 0;
+}
+
+/* ---------- 12. RESPONSIVIDADE ---------- */
+/* Tablet: 2 colunas */
+@media (max-width: 1024px) {
+  .grade-projetos,
+  .lista-cartoes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celular: 1 coluna */
+@media (max-width: 700px) {
+  .apresentacao {
+    padding: 2.5rem 0;
+  }
+
+  .apresentacao__interno {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .apresentacao__foto {
+    width: 160px;
+    height: 160px;
+  }
+
+  .apresentacao h1 {
+    font-size: 2.1rem;
+  }
+
+  .botoes {
+    justify-content: center;
+  }
+
+  .secao {
+    padding: 2.75rem 0;
+  }
+
+  .grade-projetos,
+  .lista-cartoes,
+  .lista-cartoes--duas {
+    grid-template-columns: 1fr;
+  }
+
+  /* Menu em uma única linha, com rolagem lateral, para ocupar pouco espaço */
+  .cabecalho {
+    position: static;
+  }
+
+  .cabecalho__interno {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .cabecalho nav {
+    min-width: 0;
+  }
+
+  .menu {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-width: 100%;
+    padding-bottom: 0.25rem;
+  }
+
+  .menu a {
+    white-space: nowrap;
+  }
+
+  section[id] {
+    scroll-margin-top: 1rem;
+  }
+}
+
+/* Respeita quem prefere menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+}
