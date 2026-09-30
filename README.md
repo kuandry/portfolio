@@ -25,7 +25,7 @@ Não foram utilizados frameworks, bibliotecas externas, JavaScript, banco de dad
 ## Estrutura do portfólio
 
 ```
-portfolio-profissional/
+portfolio/
 |-- index.html      -> conteúdo e estrutura da página
 |-- style.css       -> estilos e responsividade
 |-- README.md       -> documentação do projeto
@@ -76,11 +76,11 @@ Como o site usa apenas HTML e CSS, não há instalação de dependências.
 
 1. Baixe ou clone o repositório:
    ```bash
-   git clone https://github.com/kuandry/portfolio-profissional.git
+   git clone https://github.com/kuandry/portfolio.git
    ```
 2. Entre na pasta do projeto:
    ```bash
-   cd portfolio-profissional
+   cd portfolio
    ```
 3. Abra o arquivo `index.html` no navegador (clique duas vezes nele ou arraste-o para uma janela do navegador).
 
