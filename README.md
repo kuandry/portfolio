@@ -68,7 +68,7 @@ Sobre a autoria dos projetos:
 
 O portfólio está publicado no GitHub Pages:
 
-[INSERIR LINK DO GITHUB PAGES APÓS A PUBLICAÇÃO]
+https://kuandry.github.io/portfolio/
 
 ## Como executar localmente
 
